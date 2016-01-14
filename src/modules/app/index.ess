@@ -1,0 +1,11 @@
+var padding = props.padding
+var color = props.color
+
+.App-component
+  %concerted-spacing/index.ess
+  %concerted-palette/index.ess
+  --palette-1-h 100
+
+  background = color
+  color white
+  padding = padding

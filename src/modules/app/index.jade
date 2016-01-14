@@ -1,0 +1,21 @@
+import AppStyle from './index.ess?dynamic'
+
+h1 test-runner
+
+input(onChange=this.onChange.bind(null, 'padding'))
+input(onChange=this.onChange.bind(null, 'color'))
+
+AppStyle&props(state)
+
+export.
+  function onChange(key, ev) {
+    this.setState({[key]: ev.target.value});
+  }
+
+export.
+  var initialState = {
+    color: 'var(--palette-1)',
+    padding: 'var(--spacing-md)',
+  };
+
+export var displayName = 'App'
